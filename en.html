@@ -1,78 +1,168 @@
-<html>
-# What is Bitcoin? A Complete Guide for Beginners
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What is Bitcoin? A Complete Guide for Beginners</title>
+  <meta name="description" content="Simple, beginner-friendly guide to Bitcoin: what it is, how it works, blockchain, mining, fees, and how to store it safely (hot vs cold wallets, D'CENT)." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f15;
+      --panel: #0f1520;
+      --muted: #93a1b1;
+      --text: #e6eef6;
+      --accent: #4cc9f0;
+      --accent-2: #b5179e;
+      --maxw: 860px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Noto Sans', sans-serif; line-height: 1.65; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { padding: 56px 20px 24px; background: radial-gradient(1200px 400px at 20% -10%, rgba(76,201,240,.2), transparent), radial-gradient(900px 300px at 100% 0%, rgba(181,23,158,.12), transparent); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .container { max-width: var(--maxw); margin: 0 auto; }
+    h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 8px; }
+    .subtitle { color: var(--muted); margin: 0; }
+    main { padding: 28px 20px 80px; }
+    h2 { font-size: 1.6rem; margin-top: 2.2rem; }
+    h3 { font-size: 1.25rem; margin-top: 1.4rem; }
+    p { margin: 1rem 0; }
+    strong { color: #fff; }
+    .panel { background: var(--panel); border: 1px solid rgba(255,255,255,.06); border-radius: 14px; padding: 18px 16px; }
+    .key { border-left: 3px solid var(--accent); padding-left: 12px; }
+    figure { margin: 1.2rem 0; }
+    figcaption { font-size: .9rem; color: var(--muted); margin-top: 6px; }
+    img { width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(255,255,255,.06); background: #111; }
+    ul { padding-left: 1.1rem; }
+    ol { padding-left: 1.2rem; }
+    .hr { height: 1px; background: rgba(255,255,255,.07); margin: 2.2rem 0; }
+    footer { padding: 20px; color: var(--muted); text-align: center; border-top: 1px solid rgba(255,255,255,.06); }
+    .refs li { margin: .4rem 0; }
+    .badge { display: inline-block; font-size: .85rem; padding: 2px 8px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; color: var(--muted); }
+  </style>
 
-**Have you heard about Bitcoin but aren't quite sure what it actually is?** You might be wondering, "I know it's digital money, but how is it different from regular money?" Today, we'll walk you through everything from Bitcoin's core concepts to safe storage methods, explained in terms anyone can understand.
+  <!-- Open Graph -->
+  <meta property="og:title" content="What is Bitcoin? A Complete Guide for Beginners" />
+  <meta property="og:description" content="From core concepts to safe storage (hot vs cold wallets), learn Bitcoin in plain English." />
+  <meta property="og:type" content="article" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>What is Bitcoin? A Complete Guide for Beginners</h1>
+      <p class="subtitle"><span class="badge">Beginner Friendly</span></p>
+    </div>
+  </header>
 
-## What is Bitcoin? A New Currency for the Digital Age
+  <main class="container" role="main">
+    <section>
+      <p><strong>Have you heard about Bitcoin but aren't quite sure what it actually is?</strong> You might be wondering, “I know it's digital money, but how is it different from regular money?” This guide walks you through the core ideas and safe storage methods in straightforward terms.</p>
+    </section>
 
-**Key Summary:** Bitcoin is the world's first cryptocurrency created by Satoshi Nakamoto in 2009—a digital currency that enables transactions without the need for governments or banks.
+    <div class="hr"></div>
 
-Bitcoin is a revolutionary digital currency introduced in 2009 by the mysterious developer 'Satoshi Nakamoto.' Unlike traditional currencies, Bitcoin has no physical form and exists only as computer code.
+    <section id="what-is-bitcoin">
+      <h2>What is Bitcoin? A New Currency for the Digital Age</h2>
+      <p class="panel key"><strong>Key Summary:</strong> Bitcoin is the world's first cryptocurrency created by Satoshi Nakamoto in 2009—a digital currency that enables transactions without the need for governments or banks.</p>
+      <p>Bitcoin is a revolutionary digital currency introduced in 2009 by the mysterious developer “Satoshi Nakamoto.” Unlike traditional currencies, Bitcoin has no physical form and exists only as computer code.</p>
+      <p>Its most important feature is that <strong>there's no central authority</strong>. While the Korean won is issued by the Bank of Korea and the US dollar by the Federal Reserve, Bitcoin is managed collectively by a worldwide network of computers.</p>
 
-Its most important feature is that **there's no central authority**. While the Korean won is issued by the Bank of Korea and the US dollar by the Federal Reserve, Bitcoin is managed collectively by a worldwide network of computers.
+      <figure>
+        <img src="https://via.placeholder.com/1200x630?text=Traditional+vs+Bitcoin" alt="Comparison between traditional currency and digital currency Bitcoin">
+        <figcaption>Traditional coins placed alongside the Bitcoin logo.</figcaption>
+      </figure>
+    </section>
 
-[Image: Traditional coins placed alongside the Bitcoin logo / alt="Comparison between traditional currency and digital currency Bitcoin"]
+    <section id="differences">
+      <h2>What are the Key Differences Between Regular Money and Bitcoin?</h2>
+      <p class="panel key"><strong>Key Summary:</strong> While central banks can control the supply of regular currencies, Bitcoin has a predetermined limit of 21 million coins total.</p>
 
-## What are the Key Differences Between Regular Money and Bitcoin?
+      <h3>Differences in Issuance</h3>
+      <p>Central banks can issue additional regular currency as needed. In contrast, Bitcoin has a capped supply of 21 million coins, ensuring scarcity.</p>
 
-**Key Summary:** While central banks can control the supply of regular currencies, Bitcoin has a predetermined limit of 21 million coins total.
+      <h3>Transaction Approval Methods</h3>
+      <p>When you send money through a bank account, the bank verifies and approves the transaction. Bitcoin transactions are approved through a <strong>mining</strong> process where thousands of computers worldwide verify transactions.</p>
 
-**Differences in Issuance**
-Central banks can issue additional regular currency as needed. In contrast, Bitcoin has a capped supply of 21 million coins, ensuring scarcity.
+      <h3>Transaction Time and Fees</h3>
+      <p>International wire transfers through banks typically take 1–3 days, but Bitcoin can be sent anywhere in the world within an average of about 10 minutes (one block).</p>
 
-**Transaction Approval Methods**
-When you send money through a bank account, the bank verifies and approves the transaction. Bitcoin transactions are approved through a **mining** process where thousands of computers worldwide verify transactions.
+      <figure>
+        <img src="https://via.placeholder.com/1200x630?text=Centralized+vs+Decentralized" alt="Comparison diagram of centralized banking system versus decentralized Bitcoin network">
+        <figcaption>Infographic comparing central banking systems with the distributed Bitcoin network.</figcaption>
+      </figure>
+    </section>
 
-**Transaction Time and Fees**
-International wire transfers through banks typically take 1-3 days, but Bitcoin can be sent anywhere in the world within an average of 10 minutes.
+    <section id="safety">
+      <h2>How Does Bitcoin Enable Safe Transactions?</h2>
+      <p class="panel key"><strong>Key Summary:</strong> Bitcoin uses blockchain technology—a distributed ledger system that records all transactions transparently and securely.</p>
 
-[Image: Infographic comparing central banking systems with the distributed Bitcoin network / alt="Comparison diagram of centralized banking system versus decentralized Bitcoin network"]
+      <p>The core technology behind Bitcoin is the <strong>blockchain</strong>. Simply put, it's a system where a massive ledger containing all transaction records is stored identically on computers worldwide.</p>
 
-## How Does Bitcoin Enable Safe Transactions?
+      <h3>How Blockchain Works</h3>
+      <ol>
+        <li>A wants to send Bitcoin to B</li>
+        <li>This transaction information is broadcast to the network</li>
+        <li>Miners worldwide verify the transaction's validity</li>
+        <li>Once verified, the transaction is recorded in a block</li>
+        <li>The new block is linked to the existing chain</li>
+      </ol>
 
-**Key Summary:** Bitcoin uses blockchain technology—a distributed ledger system that records all transactions transparently and securely.
+      <p>Once recorded, transactions are nearly impossible to change or delete because identical records are stored on thousands of computers worldwide.</p>
 
-The core technology behind Bitcoin is the **blockchain**. Simply put, it's a system where a massive ledger containing all transaction records is stored identically on computers worldwide.
+      <figure>
+        <img src="https://via.placeholder.com/1200x630?text=Blockchain+Blocks" alt="Connected block diagram illustrating blockchain structure">
+        <figcaption>3D diagram showing blocks connected in a chain.</figcaption>
+      </figure>
+    </section>
 
-**How Blockchain Works**
-1. A wants to send Bitcoin to B
-2. This transaction information is broadcast to the network
-3. Miners worldwide verify the transaction's validity
-4. Once verified, the transaction is recorded in a block
-5. The new block is linked to the existing chain
+    <section id="storage">
+      <h2>How to Store Bitcoin Safely?</h2>
+      <p class="panel key"><strong>Key Summary:</strong> Bitcoin is most secure when stored in a cold wallet—an offline storage device.</p>
 
-Once recorded, transactions are nearly impossible to change or delete because identical records are stored on thousands of computers worldwide.
+      <h3>Hot Wallets vs Cold Wallets</h3>
+      <ul>
+        <li><strong>Hot Wallets:</strong> Connected to the internet (exchanges, mobile apps).</li>
+        <li><strong>Cold Wallets:</strong> Completely offline hardware devices.</li>
+      </ul>
 
-[Image: 3D diagram showing blocks connected in a chain / alt="Connected block diagram illustrating blockchain structure"]
+      <p>There have been numerous cases where major exchanges were hacked, resulting in large amounts of Bitcoin being stolen. By contrast, there are virtually no cases of Bitcoin stored in personal cold wallets being compromised when used properly.</p>
 
-## How to Store Bitcoin Safely?
+      <h3>Advantages of D’CENT Cold Wallets</h3>
+      <p>D’CENT cold wallets store private keys in a hardware environment isolated from the internet. They only connect briefly during transactions, reducing remote attack surfaces for private key extraction.</p>
 
-**Key Summary:** Bitcoin is most secure when stored in a cold wallet—an offline storage device.
+      <figure>
+        <img src="https://via.placeholder.com/1200x630?text=D%27CENT+Cold+Wallet" alt="DCENT cold wallet hardware and security system diagram">
+        <figcaption>D’CENT cold wallet product image and security feature diagram.</figcaption>
+      </figure>
+    </section>
 
-Bitcoin storage methods fall into two main categories:
+    <section id="conclusion">
+      <h2>Conclusion</h2>
+      <p>Bitcoin represents more than just digital currency—it presents a new paradigm for financial systems. While it enables safe and transparent transactions without central authorities, secure storage is paramount.</p>
+      <p><strong>If you're considering Bitcoin investment, start by establishing a secure storage environment first.</strong> Taking your first step with a reliable cold wallet sets a strong foundation for long-term self-custody.</p>
+    </section>
 
-**Hot Wallets vs Cold Wallets**
-- Hot Wallets: Connected to the internet (exchanges, mobile apps)
-- Cold Wallets: Completely offline hardware devices
+    <div class="hr"></div>
 
-There have been numerous cases where major exchanges were hacked, resulting in hundreds of millions of dollars worth of Bitcoin being stolen. However, there are virtually no cases of Bitcoin stored in personal cold wallets being hacked.
+    <section id="references">
+      <h2>Further Reading</h2>
+      <ul class="refs">
+        <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Bitcoin: A Peer-to-Peer Electronic Cash System (Satoshi Nakamoto, 2008)</a></li>
+        <li><a href="https://developer.bitcoin.org/devguide/transactions.html" target="_blank" rel="noopener">Bitcoin Developer Guide – Transactions</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Main_Page" target="_blank" rel="noopener">Bitcoin Wiki – Main Page</a></li>
+      </ul>
+    </section>
+  </main>
 
-**Advantages of DCENT Cold Wallets**
-DCENT cold wallets store private keys in an environment completely isolated from the internet. They only connect briefly during transactions, making it impossible for hackers to access your secure storage.
+  <footer>
+    <small>&copy; <span id="y"></span> Your Site. All rights reserved.</small>
+  </footer>
 
-[Image: DCENT cold wallet product image and security feature diagram / alt="DCENT cold wallet hardware and security system diagram"]
-
-## Conclusion
-
-Bitcoin represents more than just digital currency—it presents a new paradigm for financial systems. While innovative in enabling safe and transparent transactions without central authorities, secure storage is paramount.
-
-**If you're considering Bitcoin investment, start by establishing a secure storage environment first.** We encourage you to take your first steps into the cryptocurrency world by safely storing your Bitcoin with a DCENT cold wallet.
-
----
-
-**Word count: Approximately 1,200 words**
-
-**Target language: English**
-
-  
+  <script>
+    // year stamp
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
